@@ -24,7 +24,7 @@ struct behavior_layout_shift_toggle_config {
 struct behavior_layout_shift_toggle_data {};
 
 // Global layout shift state
-static bool layout_shift_active = false;
+static bool layout_shift_active = true;
 
 #if IS_ENABLED(CONFIG_LAYOUT_SHIFT_PERSISTENT_STATE)
 static void layout_shift_save_work_handler(struct k_work *work) {
